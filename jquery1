@@ -38,6 +38,8 @@
         $(".cls1").fadeToggle();
         //to select id
         $("#h1").fadeToggle();
+        //ID h1 , ID div2 and class diccl2 selector
+        $("#h1,#div3,.diccl2").fadeToggle();
     }
 </script>
 </html>
