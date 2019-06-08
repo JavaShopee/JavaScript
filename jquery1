@@ -15,3 +15,29 @@
    }
 </script>
 </html>
+
+****************************************************************************************************************
+*                                                        J Query Selector                                      *
+****************************************************************************************************************
+
+<html>
+<head>
+    <title>JQuery Selectors</title>
+</head>
+<body>
+  <h1 id="h1" class="cls1">Heading goes here</h1>
+  <h1 id="h2" class="cls1">Heading goes here</h1>
+  <h1 id="h3" class="cls2">Heading goes here</h1><br>
+  <button onclick="fn1()">Click Me</button>
+</body>
+<script src="C:\Users\sachi\Desktop\JSample\jquery.js"></script>
+<script>
+    function fn1()
+    {
+        //to select class
+        $(".cls1").fadeToggle();
+        //to select id
+        $("#h1").fadeToggle();
+    }
+</script>
+</html>
