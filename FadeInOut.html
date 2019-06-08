@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Sample Fade Out App</title>
+<script type="text/javascript">
+
+var intervalId = 0;
+var opacity = 0;
+function fadeIn()
+{
+    intervalId  = setInterval(show,20);
+}
+function fadeOut()
+{
+    intervalId  = setInterval(hide,20);
+}
+function hide()
+{
+    var img  = document.getElementById("img1");
+    opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+    opacity = opacity - 0.1;
+    img.style.opacity = opacity
+}
+function show()
+{
+    var img  = document.getElementById("img1");
+    opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+    opacity = opacity + 0.1;
+    img.style.opacity = opacity
+  
+}
+</script>
+<body>
+
+<button onclick="fadeIn()">Fade In</button><br><br>
+<img  id="img1" src="/Users/sachinarora/Desktop/JavaCodes/image1.jpg" width="250px"/><br><br>
+<button onclick="fadeOut()">Fade Out</button><br><br>
+
+</body>
+</html>
