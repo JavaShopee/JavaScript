@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Sampl Tilte Goes Here</title>
+<script src="C:\Users\sachi\Desktop\JSample\jquery.js"></script>
+</head>
+<body>
+    <h1 id="h1">The Sample Heading</h1>
+  <button onclick="fn1()">Click Me</button>
+</body>
+<script src="C:\Users\sachi\Desktop\JSample\jquery.js"></script>
+<script type="text/javascript">
+   function fn1()
+   {
+       $("#h1").fadeToggle(2000);
+   }
+</script>
+</html>
