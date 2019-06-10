@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>The sample title goes here</title>
+</head>
+<body>
+<div id="div1">
+   <p>First Para First Div</p>
+   <p>Second Para First Div</p> 
+</div>
+<div id="div2">
+    <p>First Para Second Div</p>
+    <p>Second Para Second Div</p> 
+</div>
+<button id="btn1">Fade In</button>
+<button id="btn2">Fade Out</button>
+<button id="btn3">Fade Tollgle</button>
+</body>
+<script src="D:\Users\703238701\Desktop\JScript\jquery.js"></script>
+<script>
+    $(document).ready(function fn1()
+    {
+       $("#btn1").click(function(){
+             $("#div1").slideUp();
+       });
+       $("#btn2").click(function(){
+              $("#div1").slideDown();
+       });
+       $("#btn3").click(function(){
+              $("#div1").slideToggle();
+       });
+    });
+
+</script>
+</html>
