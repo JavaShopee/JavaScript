@@ -7,10 +7,16 @@
             {
                 var uname = document.getElementById("username")
                 var passw = document.getElementById("password")
-                if(uname.value.trim() == "" || passw.value.trim() == "")
+                if(uname.value.trim() == "")
                 {
                  document.getElementById("username").style.border = "solid 2px red"
                  document.getElementById("lbl1").style.visibility="visible"
+                 return false; 
+                }
+                else if(passw.value.trim() == "")
+                {
+                 document.getElementById("password").style.border = "solid 2px red"
+                 document.getElementById("lbl2").style.visibility="visible"
                  return false; 
                 }
                 else if(passw.value.length < 5)
@@ -22,7 +28,6 @@
                 {
                   return true; 
                 }
-
             }
     </script>
 </head>
@@ -32,6 +37,7 @@
         <input type="text" placeholder="username" id="username"></input><br><br>
         <label id="lbl1" style="color: rosybrown; visibility:hidden">Invalid</label><br><br>
         <input  type="password" placeholder="password" id="password"></input><br><br>
+        <label id="lbl2" style="color: rosybrown; visibility:hidden">Invalid</label><br><br>
         <button type="submit">Click</button><br>
     </form> 
 </body>
